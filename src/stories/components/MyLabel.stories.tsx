@@ -4,6 +4,11 @@ import { MyLabel, Props } from '../../components/MyLabel';
 const meta: Meta<typeof MyLabel> = {
   title: 'UI/My Label',
   component: MyLabel,
+  argTypes: {
+    size: {
+      control: 'select'
+    }
+  }
 };
 export default meta;
 
