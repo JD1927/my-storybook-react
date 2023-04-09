@@ -7,7 +7,10 @@ const meta: Meta<typeof MyLabel> = {
   argTypes: {
     size: {
       control: 'select'
-    }
+    },
+    fontColor: {
+      control: 'color'
+    },
   }
 };
 export default meta;
@@ -36,5 +39,11 @@ export const Tertiary: Story = {
   args: {
     size: 'normal',
     color: 'tertiary',
+  }
+};
+export const CustomFontColor: Story = {
+  args: {
+    size: 'h1',
+    fontColor: '#5517ac',
   }
 };
